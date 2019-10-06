@@ -1,0 +1,2 @@
+class Saller < ApplicationRecord
+end

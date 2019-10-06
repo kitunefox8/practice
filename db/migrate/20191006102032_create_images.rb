@@ -3,6 +3,7 @@ class CreateImages < ActiveRecord::Migration[5.2]
     create_table :images do |t|
       t.string :image_url, null: false
       t.timestamps
+      t.integer :product_id
     end
   end
 end

@@ -14,7 +14,7 @@ class CreateProfiles < ActiveRecord::Migration[5.2]
       t.string :city, null: false
       t.string :district, null: false
       t.string :building
-
+      t.integer :user_id
 
 
       t.timestamps
