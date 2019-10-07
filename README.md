@@ -31,7 +31,7 @@
 |district|string|null: false,foreign_key|
 |building|string|foreign_key|
 ### Association
-- belongs_to :usars
+- belongs_to :usar
 
 ## products
 |Column|Type|Options|
@@ -78,8 +78,8 @@
 |user-id|inteder||
 |product-id|inteder||
 ### Association
-- belongs_to :users
-- belongs_to :products
+- belongs_to :user
+- belongs_to :product
 
 ## tradindg
 |Column|Type|Options|
@@ -98,7 +98,7 @@
 |product-id|inteder||
 |trading-id|inteder||
 ### Association
-- belongs_to :products
+- belongs_to :product
 
 ## category
 |Column|Type|Options|
