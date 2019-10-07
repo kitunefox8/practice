@@ -1,0 +1,2 @@
+class Grandchild < ApplicationRecord
+end
