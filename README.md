@@ -17,10 +17,10 @@
 ## profile
 |Column|Type|Options|
 |------|----|-------|
-|firstname|string|null: false,foreign_key|
-|lastname|string|null: false,foreign_key|
-|firstkana|string|null: false,foreign_key|
-|lastkana|string|null: false,foreign_key|
+|first_name|string|null: false,foreign_key|
+|last_name|string|null: false,foreign_key|
+|first_kana|string|null: false,foreign_key|
+|last_kana|string|null: false,foreign_key|
 |birth-year|date|null: false,foreign_key|
 |birth-month|date|null: false,foreign_key|
 |birth-day|date|null: false,foreign_key|
