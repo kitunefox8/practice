@@ -124,12 +124,6 @@ ActiveRecord::Schema.define(version: 2019_10_06_121754) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "sallers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "sellers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
     t.datetime "created_at", null: false
