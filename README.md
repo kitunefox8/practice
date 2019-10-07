@@ -21,17 +21,23 @@
 |last_name|string|null: false,foreign_key|
 |first_kana|string|null: false,foreign_key|
 |last_kana|string|null: false,foreign_key|
-|birth-year|date|null: false,foreign_key|
-|birth-month|date|null: false,foreign_key|
-|birth-day|date|null: false,foreign_key|
-|tell|string|foreign_key,unipue: true|
+|birth_year|date|null: false,foreign_key|
+|birth_month|date|null: false,foreign_key|
+|birth_day|date|null: false,foreign_key|
+|phone_number|string|foreign_key,unipue: true|
+### Association
+- belongs_to :user
+
+## addres
+|Column|Type|Options|
+|------|----|-------|
 |zipcode|string|null: false,foreign_key|
 |prefecture|string|null: false,foreign_key|
 |city|string|null: false,foreign_key|
 |district|string|null: false,foreign_key|
 |building|string|foreign_key|
 ### Association
-- belongs_to :usar
+- belongs_to :user
 
 ## products
 |Column|Type|Options|
@@ -39,25 +45,26 @@
 |name|string|null: false|
 |image|text|null: false|
 |price|string|null: false|
-|seller-name-id|inteder|null: false,foreign_key: true|
-|category-id|inteder|null: false,foreign_key: true|
+|seller_name_id|inteder|null: false,foreign_key: true|
+|category_id|inteder|null: false,foreign_key: true|
 |brand|string||
-|size-id|inteder||
+|size_id|inteder||
 |description|inteder|null: false|
-|state-id|inteder|null: false|
-|status-id|inteder|null: false|
+|state_id|inteder|null: false|
+|status_id|inteder|null: false|
 ### Association
 - has_many :comments,　dependent: :destroy
 - has_many :likes, dependent: :destroy
+- belongs_to :user
 - belongs_to :order
 
-## coment
+## comment
 |Column|Type|Options|
 |------|----|-------|
 |id|inteder||
-|comment-text||
-|product-id|inteder|
-|user-id|inteder||
+|comment_text||
+|product_id|inteder|
+|user_id|inteder||
 ### Association
 - belongs_to :user
 - belongs_to:product
@@ -75,8 +82,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |id|inteder||
-|user-id|inteder||
-|product-id|inteder||
+|user_id|inteder||
+|product_id|inteder||
 ### Association
 - belongs_to :user
 - belongs_to :product
@@ -85,8 +92,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |id|inteder||
-|seller-id|inteder||
-|buyer-id|inteder||
+|seller_id|inteder||
+|buyer_id|inteder||
 ### Association
 - has_many :reviws
 - has_many :orders
@@ -95,8 +102,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |id|inteder||
-|product-id|inteder||
-|trading-id|inteder||
+|product_id|inteder||
+|trading_id|inteder||
 ### Association
 - belongs_to :product
 
@@ -173,9 +180,10 @@
 |Column|Type|Options|
 |------|----|-------|
 |id|integer||
-|product-id|integer||
+|product_id|integer||
 |image-url|string||
 ### Association
+- belongs_to :product
 
 ## shipping
 |Column|Type|Options|
@@ -186,19 +194,21 @@
 |delivaryfee|string|null: false|
 |id|integer|null: false|
 ### Association
+- belongs_to :status
 
 ## sns_credentials
 |Column|Type|Options|
 |------|----|-------|
 |id|integer||
-|user-id|integer||
+|user_id|integer||
 |provider|string||
 ### Association
+- belongs_to :user
 
 ## creditcard
 |Column|Type|Options|
 |------|----|-------|
-|user-id|integer|null: false|
+|user_id|integer|null: false|
 |cardnumber|string|null: false|
 ### Association
 - belongs_to:user
@@ -206,15 +216,15 @@
 ## seller
 |Column|Type|Options|
 |------|----|-------|
-|seller-id|inteder||
-|buyer-id|inteder||
+|seller_id|inteder||
+|buyer_id|inteder||
 ### Association
 - belongs_to:buyer
 
 ## buyer
 |Column|Type|Options|
 |------|----|-------|
-|seller-id|inteder||
-|buyer-id|inteder||
+|seller_id|inteder||
+|buyer_id|inteder||
 ### Association
 - belongs_to:seller
