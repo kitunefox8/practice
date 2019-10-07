@@ -47,8 +47,8 @@
 |state-id|inteder|null: false|
 |status-id|inteder|null: false|
 ### Association
-- has_many :comments
-- has_many :likes
+- has_many :comments,　dependent: :destroy
+- has_many :likes, dependent: :destroy
 - belongs_to :order
 
 ## coment
