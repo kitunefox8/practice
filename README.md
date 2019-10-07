@@ -221,18 +221,24 @@ Things you may want to cover:
 ### Association
 
 ## creditcard
+|Column|Type|Options|
+|------|----|-------|
 |user-id|integer|null: false|
 |cardnumber|string|null: false|
 ### Association
 - belongs_to:user
 
 ## seller
+|Column|Type|Options|
+|------|----|-------|
 |seller-id|inteder||
 |buyer-id|inteder||
 ### Association
 - belongs_to:buyer
 
 ## buyer
+|Column|Type|Options|
+|------|----|-------|
 |seller-id|inteder||
 |buyer-id|inteder||
 ### Association
