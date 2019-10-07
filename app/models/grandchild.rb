@@ -1,3 +1,4 @@
 class Grandchild < ApplicationRecord
- belongs_to :children
+  belongs_to :category
+  belongs_to :child
 end
