@@ -18,7 +18,7 @@
 ## profile
 |Column|Type|Options|
 |------|----|-------|
-|user-id|inteder||
+|user_id|inteder|null: false,foreign_key|
 |first_name|string|null: false,foreign_key|
 |last_name|string|null: false,foreign_key|
 |first_kana|string|null: false,foreign_key|
@@ -26,7 +26,7 @@
 |birth_year|date|null: false,foreign_key|
 |birth_month|date|null: false,foreign_key|
 |birth_day|date|null: false,foreign_key|
-|phone_number|string|foreign_key,unipue: true|
+|phone_number|string|null: false,foreign_key,unipue: true|
 ### Association
 - has_one: user
 
@@ -50,8 +50,8 @@
 |price|string|null: false|
 |seller_name_id|inteder|null: false,foreign_key: true|
 |category_id|inteder|null: false,foreign_key: true|
-|brand|string||
-|size_id|inteder||
+|brand|string|null: false|
+|size_id|inteder|foreign_key: true|
 |description|inteder|null: false|
 |state_id|inteder|null: false,foreign_key: true|
 |status_id|inteder|null: false,foreign_key: true|
