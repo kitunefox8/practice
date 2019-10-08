@@ -1,0 +1,2 @@
+class ImageTest < ApplicationRecord
+end
