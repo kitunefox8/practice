@@ -1,0 +1,8 @@
+.form
+  = form_for [@image] do |f|
+    = f.file_field :image
+    = f.submit 'send'
+
+.preview-iamge
+  - @images.each do |images|
+    = image_tag images.image.url
