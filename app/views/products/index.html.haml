@@ -1,0 +1,502 @@
+.wrapper#__next
+  %header
+    .mercari__head
+      .mercari__head__top
+        .mercari__head__logo
+          %a.mercari__head__logo-image
+            =image_tag "320px-Mercari_logo.svg.png", class: "mercari__head__logo-image", size: "134x36"
+        %form.search__form{}
+          %input{type: "search", class: "search__form__input"}
+          %button.search-button
+            %svg.sc-jDwBTQ.sc-kgAjT.gKFuLS{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 16 16", :width => "16"}
+              %path{:d => "M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117z", :fill => "currentColor", "fill-rule" => "nonzero"}
+      .mercari__head__bottom
+        .mercari__head__bottom__categorys
+          .mercari__head__bottom__category
+            %a.mercari__category{:href => "/jp/category/"}
+              %svg.sc-cvbbAY.sc-fAjcbJ.dKBFhm{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 20 16", :width => "20"}>
+                %path{:d => "M18.799 15.25h-11.5a1.25 1.25 0 1 1 0-2.5h11.5a1.25 1.25 0 0 1 0 2.5zm0-6h-11.5a1.25 1.25 0 1 1 0-2.5h11.5a1.25 1.25 0 0 1 0 2.5zm0-6h-11.5a1.25 1.25 0 1 1 0-2.5h11.5a1.25 1.25 0 0 1 0 2.5zM2 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z", :fill => "currentColor", "fill-rule" => "nonzero"}
+            カテゴリーから探す
+          .mercari__head__bottom__brand
+            %a.mercari__brand{:href => "/jp/brand/"}
+              %svg.sc-csuQGl.sc-caSCKo.kspmux{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 23 16", :width => "23"}>
+                %path{:d => "M6.315 0L4.473 1.806 2.833.019.73 1.977l1.69 1.84L1.198 5.02c-1.594 1.594-1.594 4.188-.01 5.772L6.3 16h13.272a3.08 3.08 0 0 0 3.077-3.077V3.076A3.08 3.08 0 0 0 19.57 0H6.315zm13.46 12.925a.211.211 0 0 1-.205.205H7.504L3.227 8.771a1.226 1.226 0 0 1-.01-1.71L4.38 5.92l1.28 1.371a2.68 2.68 0 1 0 2.13-1.93L6.433 3.907 7.49 2.87h12.082a.211.211 0 0 1 .206.205v9.848h-.002z", :fill => "currentColor", "fill-rule" => "nonzero"}
+            ブランドから探す
+        .mercari__head__bottom__register
+          .mercari__head__bottom__new
+            %a.mercari__head__bottom__signup{:href => "/jp/signup/"} 新規会員登録
+          .mercari__head__bottom__log
+            %a.mercari__head__bottom__in{:href => "/jp/login/?login_callback=%2Fjp%2F"} ログイン
+  .main__container
+    .main__container__sliders
+      .main__container__slider
+        .main__container__slider__image
+        .slider-control-centerleft{:style => "position:absolute;top:50%;left:0;transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%)"}
+          .eoeUvk
+        .slider-control-centerright{:style => "position:absolute;top:50%;right:0;transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%)"}
+          .sc-VJcYb.sc-LKuAh.dkZuVW.sc-hmXxxW.cwGzbB
+        .slider-control-bottomcenter{:style => "position:absolute;bottom:0;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%)"}
+          .style_dotsIndicator__1fZnt.common_fontFamily__3-3Si.style_center__2IkR_.style_mono__3e12j.sc-iBEsjs.fJxojC
+            %span.style_active__2ihlK
+      .popular__categorys
+        %h2.popular__category 人気のカテゴリー
+        .popular__category__lists
+          %ul.popular__category__lists__unordered
+            %li.popular__category__list
+              %a.category レディース
+            %li.popular__category__list
+              %a.category メンズ
+            %li.popular__category__list
+              %a.category 家電・スマホ・カメラ
+            %li.popular__category__list
+              %a.category おもちゃ・ホビー・グッズ
+      .new__product
+        .ladies
+          .ladies__new{:name => "scroll-1"}
+            %h3.style_heading.common_fontFamily__3-3Si.style_responsiveLv2__3K0hn.sc-chbbiW.kHlukY レディース新着アイテム
+            %a.more_view{:href => "/jp/category/1/"} もっと見る
+          .ladies__items
+            .ladies__item
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m85601789056/"}
+                  %img{:alt => "Thumbnail of \"ZARA  ミモレ丈 スカート\"", :src => "https://static.mercdn.net/thumb/photos/m85601789056_1.jpg?1569246787"}/
+                .name
+                  ZARA  ミモレ丈 スカート
+                .price
+                  ¥3,500
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m82940365700/"}
+                  %img{:alt => "Thumbnail of \"ブーツ 黒 ライチ レザー エナメル\"", :src => "https://static.mercdn.net/thumb/photos/m82940365700_1.jpg?1557230019"}/
+                .name
+                  ブーツ 黒 ライチ レザー エナメル
+                .price
+                  ¥10,600
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m80251945882/"}
+                  %img{:alt => "Thumbnail of \"ビルケンシュトック サンダル ドクターマーチン\"", :src => "https://static.mercdn.net/thumb/photos/m80251945882_1.jpg?1570356770"}/
+                .name
+                  ビルケンシュトック サンダル ドクターマーチン
+                .price
+                  ¥2,250
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m13055202221/"}
+                  %img{:alt => "Thumbnail of \"女性用フード付きスポーツウェア\"", :src => "https://static.mercdn.net/thumb/photos/m13055202221_1.jpg?1570103695"}/
+                .name
+                  女性用フード付きスポーツウェア
+                .price
+                  ¥780
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m98543324609/"}
+                  %img{:alt => "Thumbnail of \"総レース ドレス  結婚式 二次会\"", :src => "https://static.mercdn.net/thumb/photos/m98543324609_1.jpg?1570198062"}/
+                .name
+                  総レース ドレス  結婚式 二次会
+                .price
+                  ¥6,999
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m94226529481/"}
+                  %img{:alt => "Thumbnail of \"ADORE フラワープリントプリーツスカート\"", :src => "https://static.mercdn.net/thumb/photos/m94226529481_1.jpg?1570224098"}/
+                .name
+                  ADORE フラワープリントプリーツスカート
+                .price
+                  ¥28,000
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m93762420364/"}
+                  %img{:alt => "Thumbnail of \"ガウチョパンツ ストライプ ワイドパンツ\"", :src => "https://static.mercdn.net/thumb/photos/m76202509766_1.jpg?1570508330"}/
+                .name
+                  ガウチョパンツ ストライプ ワイドパンツ
+                .price
+                  ¥1,200
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m93390523219/"}
+                  %img{:alt => "Thumbnail of \"ナイキ  エアフォース 1   24cm 新品\"", :src => "https://static.mercdn.net/thumb/photos/m93390523219_1.jpg?1563629330"}/
+                .name
+                  ナイキ  エアフォース 1   24cm 新品
+                .price
+                  ¥9,900
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m66778255449/"}
+                  %img{:alt => "Thumbnail of \"ジャケット\"", :src => "https://static.mercdn.net/thumb/photos/m66778255449_1.jpg?1541423589"}/
+                .name
+                  ジャケット
+                .price
+                  ¥1,300
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m65307440299/"}
+                  %img{:alt => "Thumbnail of \"ジャスグリッティー ケーブル柄プルオーバー\"", :src => "https://static.mercdn.net/thumb/photos/m65307440299_1.jpg?1570345708"}/
+                .name
+                  ジャスグリッティー ケーブル柄プルオーバー
+                .price
+                  ¥3,999
+                  
+        .mans
+          .mans__new{:name => "scroll-2"}
+            %h3.style_heading.common_fontFamily__3-3Si.style_responsiveLv2__3K0hn.sc-chbbiW.kHlukY メンズ新着アイテム
+            %a.more_view{:href => "/jp/category/2/"} もっと見る
+          .mans__items
+            .mans__item
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m99863576270/"}
+                  %img{:alt => "Thumbnail of \"期間限定価格 anything エニシング シャツ\"", :src => "https://static.mercdn.net/thumb/photos/m99863576270_1.jpg?1570180439"}/
+                .name
+                  期間限定価格 anything エニシング シャツ
+                .price
+                  ¥9,000
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m80008950143/"}
+                  %img{:alt => "Thumbnail of \"GARY LINDEN リング\"", :src => "https://static.mercdn.net/thumb/photos/m80008950143_1.jpg?1564673286"}/
+                .name
+                  GARY LINDEN リング
+                .price
+                  ¥4,200
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m24491610482/"}
+                  %img{:alt => "Thumbnail of \"トミーヒルフィガー  ハーフジップ フリース\"", :src => "https://static.mercdn.net/thumb/photos/m24491610482_1.jpg?1570096710"}/
+                .name
+                  トミーヒルフィガー  ハーフジップ フリース
+                .price
+                  ¥4,900
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m46841814774/"}
+                  %img{:alt => "Thumbnail of \"定価4.2万円　ジェルマーノ / Beams F ブラックデニム2Pスラックス\"", :src => "https://static.mercdn.net/thumb/photos/m46841814774_1.jpg?1570357595"}/
+                .name
+                  定価4.2万円　ジェルマーノ / Beams F ブラックデニム2Pスラックス
+                .price
+                  ¥6,500
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m44561757213/"}
+                  %img{:alt => "Thumbnail of \"Tシャツ 　LUZ\"", :src => "https://static.mercdn.net/thumb/photos/m44561757213_1.jpg?1569847672"}/
+                .name
+                  Tシャツ 　LUZ
+                .price
+                  ¥2,100
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m42720480602/"}
+                  %img{:alt => "Thumbnail of \"大幅値下げ⬇︎ 大人気 INDEPENDENT ロンT 美品 ⭐️送料無料⭐️\"", :src => "https://static.mercdn.net/thumb/photos/m42720480602_1.jpg?1567641370"}/
+                .name
+                  大幅値下げ⬇︎ 大人気 INDEPENDENT ロンT 美品 ⭐️送料無料⭐️
+                .price
+                  ¥6,500
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m14037534926/"}
+                  %img{:alt => "Thumbnail of \"[売り切れ寸前] ジーンズ スキニーパンツ デニム ダメージ インポート\"", :src => "https://static.mercdn.net/thumb/photos/m14037534926_1.jpg?1570357807"}/
+                .name
+                  [売り切れ寸前] ジーンズ スキニーパンツ デニム ダメージ インポート
+                .price
+                  ¥1,999
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m96335297411/"}
+                  %img{:alt => "Thumbnail of \"new balanceセットアップ　　メンズＬ　黒\"", :src => "https://static.mercdn.net/thumb/photos/m96335297411_1.jpg?1570357806"}/
+                .name
+                  new balanceセットアップ　　メンズＬ　黒
+                .price
+                  ¥3,500
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m95563363045/"}
+                  %img{:alt => "Thumbnail of \"オーストリッチ ハンドバッグ\"", :src => "https://static.mercdn.net/thumb/photos/m95563363045_1.jpg?1569314186"}/
+                .name
+                  オーストリッチ ハンドバッグ
+                .price
+                  ¥4,500
+
+              .product
+                %p.style_link{:href => "https://item.mercari.com/jp/m70986922360/"}
+                  %img{:alt => "Thumbnail of \"mnml スキニーデニム\"", :src => "https://static.mercdn.net/thumb/photos/m70986922360_1.jpg?1568760584"}/
+                .name
+                  mnml スキニーデニム
+                .price
+                  ¥8,800
+
+      .popular__brands
+        %h2.popular__brand 人気のブランド
+        .popular__brand__lists
+          %ul.popular__brand__lists__unordered
+            %li.popular__brand__list
+              %a.category シャネル
+            %li.popular__brand__list
+              %a.category ルイヴィトン
+            %li.popular__brand__list
+              %a.category シュプリーム
+            %li.popular__brand__list
+              %a.category ナイキ
+      .new__product
+        .chanel
+          .chanel__new{:name => "scroll-658"}
+            %h3.style_heading.common_fontFamily__3-3Si.style_responsiveLv2__3K0hn.sc-chbbiW.kHlukY シャネル新着アイテム
+            %a.more_view{:href => "/jp/brand/658/"} もっと見る
+          .chanel__items
+            .chanel__item
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m29853900429/"}
+                  %img{:alt => "Thumbnail of \"シャネル ブラック Tシャツ レア\"", :src => "https://static.mercdn.net/thumb/photos/m29853900429_1.jpg?1570357803"}/
+                .name
+                  シャネル ブラック Tシャツ レア
+                .price
+                  ¥28,800
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m76433431829/"}
+                  %img{:alt => "Thumbnail of \"CHANEL&MACコスメおまとめ大特価チャンス❗\"", :src => "https://static.mercdn.net/thumb/photos/m76433431829_1.jpg?1569545695"}/
+                .name
+                  CHANEL&amp;MACコスメおまとめ大特価チャンス❗
+                .price
+                  ¥3,333
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m19710936152/"}
+                  %img{:alt => "Thumbnail of \"CHANELシャネル♡長財布♡シンボルチャーム♡カメリア♡ココマーク♡ブラック黒\"", :src => "https://static.mercdn.net/thumb/photos/m19710936152_1.jpg?1566648252"}/
+                .name
+                  CHANELシャネル♡長財布♡シンボルチャーム♡カメリア♡ココマーク♡ブラック黒
+                .price
+                  ¥26,800
+                
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m79914593146/"}
+                  %img{:alt => "Thumbnail of \"☆美品☆CHANEL シャネル ルミエール\"", :src => "https://static.mercdn.net/thumb/photos/m79914593146_1.jpg?1570327496"}/
+                .name
+                  ☆美品☆CHANEL シャネル ルミエール
+                .price
+                  ¥4,500
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m52057641880/"}
+                  %img{:alt => "Thumbnail of \"CHANEL№19\"", :src => "https://static.mercdn.net/thumb/photos/m52057641880_1.jpg?1570357778"}/
+                .name
+                  CHANEL№19
+                .price
+                  ¥2,000
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m32327275364/"}
+                  %img{:alt => "Thumbnail of \"【レア❗️】シャネル CHANEL イヤリング ヴィンテージ 両耳\"", :src => "https://static.mercdn.net/thumb/photos/m32327275364_1.jpg?1568651073"}/
+                .name
+                  レア❗️】シャネル CHANEL イヤリング ヴィンテージ 両耳
+                .price
+                  ¥31,000
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m91510032498/"}
+                  %img{:alt => "Thumbnail of \"CHANEL シャネル アイシャドウ\"", :src => "https://static.mercdn.net/thumb/photos/m91510032498_1.jpg?1570357764"}/
+                .name
+                  CHANEL シャネル アイシャドウ
+                .price
+                  ¥999
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m64319270244/"}
+                  %img{:alt => "Thumbnail of \"ルージュ ココ フラッシュ 92 アムール ドゥ シャネル 3g\"", :src => "https://static.mercdn.net/thumb/photos/m64319270244_1.jpg?1570357760"}/
+                .name
+                  ルージュ ココ フラッシュ 92 アムール ドゥ シャネル 3g
+                .price
+                  ¥3,999
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m42166852543/"}
+                  %img{:alt => "Thumbnail of \"【レア❗️】シャネル CHANEL イヤリング ヴィンテージ 両耳\"", :src => "https://static.mercdn.net/thumb/photos/m42166852543_1.jpg?1568651038"}/
+                .name
+                  【レア❗️】シャネル CHANEL イヤリング ヴィンテージ 両耳
+                .price
+                  ¥31,000
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m22079641484/"}
+                  %img{:alt => "Thumbnail of \"CHANEL シャネルトラベル メイクアップパレット #ハーモニー ドゥカメリア\"", :src => "https://static.mercdn.net/thumb/photos/m22079641484_1.jpg?1570357751"}/
+                .name
+                  CHANEL シャネルトラベル メイクアップパレット #ハーモニー ドゥカメリア
+                .price
+                  ¥8,000
+
+        .LouisVuitton
+          .LouisVuitton__new{:name => "scroll-1326"}
+            %h3.style_heading.common_fontFamily__3-3Si.style_responsiveLv2__3K0hn.sc-chbbiW.kHlukY ルイヴィトン新着アイテム
+            %a.more_view{:href => "/jp/brand/1326/"} もっと見る
+          .LouisVuitton__items
+            .LouisVuitton__item
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m99130071336/"}
+                  %img{:alt => "Thumbnail of \"レア！ 廃番モデル ルイヴィトン モノグラム エンボス ブラック 三つ折り財布\"", :src => "https://static.mercdn.net/thumb/photos/m99130071336_1.jpg?1570196144"}/
+                .name
+                  レア！ 廃番モデル ルイヴィトン モノグラム エンボス ブラック 三つ折り財布
+                .price
+                  ¥6,500
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m88344415475/"}
+                  %img{:alt => "Thumbnail of \"ルイヴィトン♡ポムダムール♡ヴェルニ♡エナメル♡レッド赤♡ハンドバッグ♡トート♡\"", :src => "https://static.mercdn.net/thumb/photos/m88344415475_1.jpg?1566647583"}/
+                .name
+                  ルイヴィトン♡ポムダムール♡ヴェルニ♡エナメル♡レッド赤♡ハンドバッグ♡トート♡
+                .price
+                  ¥64,800
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m82887071999/"}
+                  %img{:alt => "Thumbnail of \"ルイヴィトンモノグラムポーチ\"", :src => "https://static.mercdn.net/thumb/photos/m82887071999_1.jpg?1570357774"}/
+                .name
+                  ルイヴィトンモノグラムポーチ
+                .price
+                  ¥9,999
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m45696366710/"}
+                  %img{:alt => "Thumbnail of \"ルイヴィトン♡ダミエ♡長財布♡男女兼用OK♡\"", :src => "https://static.mercdn.net/thumb/photos/m45696366710_1.jpg?1567918217"}/
+                .name
+                  ルイヴィトン♡ダミエ♡長財布♡男女兼用OK♡
+                .price
+                  ¥15,100
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m56915476067/"}
+                  %img{:alt => "Thumbnail of \"ルイヴィトン アストロピル キーホルダーモノグラム\"", :src => "https://static.mercdn.net/thumb/photos/m56915476067_1.jpg?1568594777"}/
+                .name
+                  ルイヴィトン アストロピル キーホルダーモノグラム
+                .price
+                  ¥3,000
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m57246203509/"}
+                  %img{:alt => "Thumbnail of \"ルイヴィトン　パンダンティフ　ネックレス　Q93125\"", :src => "https://static.mercdn.net/thumb/photos/m57246203509_1.jpg?1570357759"}/
+                .name
+                  ルイヴィトン　パンダンティフ　ネックレス　Q93125
+                .price
+                  ¥110,000
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m81542333740/"}
+                  %img{:alt => "Thumbnail of \"【超美品】ルイヴィトン  ヴィヴァシテ  茶  赤  モノグラム  バッグ 人気\"", :src => "https://static.mercdn.net/thumb/photos/m81542333740_1.jpg?1567169765"}/
+                .name
+                  【超美品】ルイヴィトン  ヴィヴァシテ  茶  赤  モノグラム  バッグ 人気
+                .price
+                  ¥59,200
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m16288922756/"}
+                  %img{:alt => "Thumbnail of \"ルイヴィトン モノグラム エトワール 長財布\"", :src => "https://static.mercdn.net/thumb/photos/m16288922756_1.jpg?1570357723"}/
+                .name
+                  ルイヴィトン モノグラム エトワール 長財布
+                .price
+                  ¥35,000
+
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m48949596190/"}
+                  %img{:alt => "Thumbnail of \"送料無料♪ルイヴィトン＊ヴェルニ＊クリーム\"", :src => "https://static.mercdn.net/thumb/photos/m48949596190_1.jpg?1570357700"}/
+                .name
+                  送料無料♪ルイヴィトン＊ヴェルニ＊クリーム
+                .price
+                  ¥5,500
+                  -# SOLD表示を今後実装するか検討
+              .product
+                %a.style_link{:href => "https://item.mercari.com/jp/m68300817432/"}
+                  %img{:alt => "Thumbnail of \"ルイヴィトン 長財布 モノグラム\"", :src => "https://static.mercdn.net/thumb/photos/m68300817432_1.jpg?1570357699"}/
+                .name
+                  ルイヴィトン 長財布 モノグラム
+                .price
+                  ¥7,000
+
+      .display
+        %a.sc-TFwJa.fUxJs{:href => "/jp/sell/"}
+          .sc-hzDkRC.cEMgYD
+            .sc-jhAzac.jsMoaY 出品
+            %svg.sc-kGXeez.sc-fBuWsC.bMYJEZ{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 18 16", :width => "18"}
+              %path{:d => "M6.3 0L4.653 1.778H1.8c-.99 0-1.8.8-1.8 1.778v10.666C0 15.2.81 16 1.8 16h14.4c.99 0 1.8-.8 1.8-1.778V3.556c0-.978-.81-1.778-1.8-1.778h-2.853L11.7 0H6.3zM9 13.333c-2.484 0-4.5-1.99-4.5-4.444 0-2.453 2.016-4.445 4.5-4.445s4.5 1.992 4.5 4.445c0 2.453-2.016 4.444-4.5 4.444zm0-1.6c1.59 0 2.88-1.273 2.88-2.844S10.59 6.044 9 6.044c-1.59 0-2.88 1.274-2.88 2.845 0 1.57 1.29 2.844 2.88 2.844z", :fill => "currentColor", "fill-rule" => "nonzero"}
+  %aside.advertising
+    .sc-ESoVU.bSubhH.sc-cjHlYL.bcomWS
+      .sc-dRaagA.gcWQbR
+        .sc-fEUNkw.fmTzct
+          .sc-dREXXX.hjdsEZ スマホでかんたんフリマアプリ
+          .sc-kcbnda.ihRzkY 今すぐ無料ダウンロード！
+          .sc-hcmgZB.gsXioq
+            %img.sc-dHmInP.kwTqFs{:alt => "", :src => "https://web-jp-assets.mercdn.net/_next/static/images/mercari_icon-f75780e32e41e052c8aaa8b446331cd8.png"}/
+            %a.sc-ejGVNB.TFEjN{:href => "https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8", :target => "_blank"}
+              %img.sc-eLdqWK.sc-iiUIRa.couthQ{:alt => "", :src => "https://web-jp-assets.mercdn.net/_next/static/images/app-store-a5c17948c6fd6d5b60b13d421cd60b35.svg"}/
+            %a.sc-ejGVNB.TFEjN{:href => "https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja", :target => "_blank"}
+              %img.sc-eLdqWK.sc-hgRTRy.iBGblK{:alt => "", :src => "https://web-jp-assets.mercdn.net/_next/static/images/google-play-495575abb895b405aa6336b2a4304958.svg"}/
+        %figure.sc-iIHSe.bMxODi
+          %img.sc-gldTML.iQCbun{:alt => "", :src => "https://web-jp-assets.mercdn.net/_next/static/images/download_app_pc-a4418175e8be071827ac88d073f40e4a.png"}/
+  %footer.copyright
+    .sc-hRmvpr.jEIztn
+      .sc-cZBZkQ.fWNMlS
+        %h2.style_heading__3qSF6.common_fontFamily__3-3Si.style_medium__1YL67.sc-jdfcpN.kWagRH メルカリについて
+        %ul.sc-jMMfwr.jqeddd
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "https://about.mercari.com/"} 会社概要（運営会社）
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/jobs/"} 採用情報
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "https://about.mercari.com/press/news/"} プレスリリース
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "https://jp-news.mercari.com/", :target => "_blank"} 公式ブログ
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/logo-guidelines/"} メルカリロゴ利用ガイドライン
+          %a.sc-cBrjTV.gdPTKQ{:href => "https://twitter.com/mercari_jp", :target => "_blank"}
+            %svg.sc-bRBYWo.sc-fkyLDJ.eCFuzj{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 21 16", :width => "21"}
+              %path{:d => "M6.343 15.969c7.61 0 11.773-6.134 11.773-11.444 0-.172 0-.345-.008-.517a8.303 8.303 0 0 0 2.066-2.086 8.576 8.576 0 0 1-2.38.635A4.07 4.07 0 0 0 19.616.329a8.377 8.377 0 0 1-2.63.973 4.186 4.186 0 0 0-3.019-1.27c-2.283 0-4.14 1.803-4.14 4.023 0 .314.041.62.106.918A11.866 11.866 0 0 1 1.404.769a3.936 3.936 0 0 0-.557 2.023c0 1.396.735 2.628 1.84 3.35a4.278 4.278 0 0 1-1.872-.503v.055c0 1.945 1.428 3.577 3.317 3.945-.347.094-.71.141-1.09.141-.266 0-.524-.023-.774-.07.524 1.6 2.057 2.76 3.865 2.792a8.452 8.452 0 0 1-5.14 1.725 8.19 8.19 0 0 1-.985-.054 12.02 12.02 0 0 0 6.335 1.796", :fill => "currentColor", "fill-rule" => "evenodd"}
+          %a.sc-cBrjTV.gdPTKQ{:href => "https://www.facebook.com/mercarijp", :target => "_blank"}
+            %svg.sc-kEYyzF.sc-iCwjlJ.kXgLaj{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 16 16", :width => "16"}
+              %path{:d => "M15.111 0H.89A.889.889 0 0 0 0 .889V15.11c0 .491.398.889.889.889h7.658V9.813H6.469V7.391h2.078V5.613c0-2.066 1.262-3.193 3.11-3.193.623-.002 1.244.03 1.863.096v2.15h-1.276c-1.002 0-1.197.478-1.197 1.178v1.543h2.397l-.31 2.422h-2.087V16h4.064c.491 0 .889-.398.889-.889V.89A.889.889 0 0 0 15.111 0z", :fill => "currentColor", "fill-rule" => "evenodd"}
+      .sc-cZBZkQ.fWNMlS
+        %h2.style_heading__3qSF6.common_fontFamily__3-3Si.style_medium__1YL67.sc-jdfcpN.kWagRH ヘルプ＆ガイド
+        %ul.sc-jMMfwr.jqeddd
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/help_center/"} メルカリガイド
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/rakuraku-mercari/"} らくらくメルカリ便
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/yuyu-mercari/"} ゆうゆうメルカリ便
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/rakuraku-ogata/"} 大型メルカリ便
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/guide/car/"} 車体取引ガイド
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/safe/description/", :target => "_blank"} メルカリあんしん・あんぜん宣言！
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/authenticity/"} 偽ブランド品撲滅への取り組み
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.lhBUUv{:href => "/jp/box/"} メルカリボックス
+      .sc-cZBZkQ.sc-ecaExY.jkJraH
+        %h2.style_heading__3qSF6.common_fontFamily__3-3Si.style_medium__1YL67.sc-jdfcpN.kWagRH プライバシーと利用規約
+        .sc-jqIZGH.dqgEsZ
+          %ul.sc-jMMfwr.jqeddd
+            %li.sc-jGxEUC.deTNXB
+              %a.sc-jdeSqf.lhBUUv{:href => "/jp/privacy/"} プライバシーポリシー
+            %li.sc-jGxEUC.deTNXB
+              %a.sc-jdeSqf.lhBUUv{:href => "/jp/tos/"} メルカリ利用規約
+            %li.sc-jGxEUC.deTNXB
+              %a.sc-jdeSqf.lhBUUv{:href => "/jp/tos_smartphone_support/"} あんしんスマホサポート制度に関する利用特約
+            %li.sc-jGxEUC.deTNXB
+              %a.sc-jdeSqf.lhBUUv{:href => "/jp/compliance/"} コンプライアンスポリシー
+        .sc-jqIZGH.dqgEsZ
+          %ul.sc-jMMfwr.jqeddd
+            %li.sc-jGxEUC.deTNXB
+              %a.sc-jdeSqf.lhBUUv{:href => "/jp/data_security/"} 個人データの安全管理に係る基本方針
+            %li.sc-jGxEUC.deTNXB
+              %a.sc-jdeSqf.lhBUUv{:href => "/jp/tokutei/"} 特定商取引に関する表記
+            %li.sc-jGxEUC.deTNXB
+              %a.sc-jdeSqf.lhBUUv{:href => "/jp/shikin_kessai/"} 資金決済法に基づく表示
+            %li.sc-jGxEUC.deTNXB
+              %a.sc-jdeSqf.lhBUUv{:href => "https://about.mercari.com/csr/safety/"} 法令順守と犯罪抑止のために
+      .sc-cZBZkQ.sc-gbzWSY.bLlPss
+        %h2.style_heading__3qSF6.common_fontFamily__3-3Si.style_medium__1YL67.sc-jdfcpN.kWagRH 国
+        %ul.sc-jMMfwr.jqeddd
+          %li.sc-jGxEUC.deTNXB
+            %a.sc-jdeSqf.sc-jUpvKA.iuRzFU{:href => "/jp/"} 日本
+            %a.sc-jdeSqf.sc-jUpvKA.iuRzFU{:href => "/"} United States
+    .sc-eNNmBn.bZYlel
+      %a.sc-jRuhRL.fcQzqW{:href => "/jp/"}
+        %img.sc-kNBZmU.igKrOd{:alt => "Mercari", :src => "https://web-jp-assets.mercdn.net/_next/static/images/logo-white-1a0696cf557ee1ed6f3c3444661d21ad.svg"}/
+      %span.sc-kkbgRg.fdphvP © 2019 Mercari
