@@ -1,0 +1,50 @@
+.buy-container
+  .buy-header
+    %h1
+      %img{alt: "mercari",width:  "180",height:"70", src: "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?2296184308"}
+  .buy-main
+    %section.buy-information
+      %h2.buy-header 購入内容の確認
+      %section.buy-content
+        .buy-content__inner
+          %h3.buy-content__inner--img
+            %img{alt:"mercari2",width: "65",height:"70",src:"https://static.mercdn.net/thumb/photos/m26991030967_1.jpg?1570582099"}/
+          %p.buy-content__inner--bold ハーフパンツ
+          .buy-form
+            %ul.buy-form__price-bold ¥3,200
+            %il.buy-form__price-bold-fee (送料込み)
+            %ul.buy-form__not-point
+              %il.buy-form__not-point__btn
+                .buy-form__not-point__btn--grey ポイントはありません
+            %ul.buy-form__price
+              .buy-form__price__content
+                %il.buy-form__price__content--guide 支払い金額
+                %il.buy-form__price__content--box ¥3200
+            %p.buy-form__price-error 配送先と支払い方法の入力を完了してください。
+            %button.buy-form__price-btn{type: "submit"} 購入する
+      %section.buy-user-info
+        .buy-user-inner
+          %h3 配送先
+          .buy-user-inner__address 〒207-0013
+          .buy-user-inner__address-prefectures 東京都 東大和市向原 6-1-5-1001
+          .buy-user-inner__address-name 笹尾 豊樹
+          .buy-user-inner__text
+            .buy-user-inner__text--fix 変更する
+      %section.buy-user-paymethood
+        .buy-user-paymethood__inner
+          .h3 支払い方法
+          .buy-user-paymethood__inner--text 現金
+          .buy-user-paymethood__inner--fix 変更する
+  .buy-footer
+    %nav
+      %ul.clearfix
+        %il
+          %p メルカリ利用規約
+        %il 
+          %p 特定商取引に関する表記
+        %il
+          %p プライバシーポリシー
+    %a.single-footer-logo{href: "https://www.mercari.com/jp/"}
+      %img{:alt => "mercari3", :height => "65", :src => "//www-mercari-jp.akamaized.net/assets/img/common/common/logo-gray.svg?2296184308", :width => "80"}/
+    %p
+      %small © 2019 Mercari
