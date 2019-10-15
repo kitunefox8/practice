@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_13_064031) do
+ActiveRecord::Schema.define(version: 2019_10_08_022842) do
 
   create_table "brandgroups", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2019_10_13_064031) do
     t.string "name", null: false
     t.integer "children_id"
     t.integer "grandchildren_id"
+    t.integer "prodacts"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -100,12 +101,13 @@ ActiveRecord::Schema.define(version: 2019_10_13_064031) do
     t.string "name", null: false
     t.string "price", null: false
     t.text "description", null: false
-    t.integer "saller_id"
     t.text "exposition"
     t.integer "category"
     t.integer "delivery_fee"
     t.integer "shipping_area"
     t.integer "shipping_days"
+    t.integer "saller_id"
+    t.integer "category_id"
   end
 
   create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

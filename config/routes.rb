@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       # get 'show2'
     end
   end
+  resources :categories, onry: [:new, :create]
   resources :image_tests, only: [:index, :create]
 
 end

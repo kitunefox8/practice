@@ -11,6 +11,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.integer :shipping_area
       t.integer :shipping_days
       t.integer :saller_id
+      t.integer :category_id
     end
   end
 end
