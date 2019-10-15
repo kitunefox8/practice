@@ -63,7 +63,8 @@
             .ladies__item
               - @product.each do |product|
                 .product
-                  %a.style_link{:href => "https://item.mercari.com/jp/m85601789056/"}
+                  %a.style_link{:href => "/products/#{product.id}"}
+
                     %img{:alt => "image", :src => product.image}/
                   .name
                     =product.name
@@ -249,7 +250,7 @@
             .chanel__item
               - @product.each do |product|
                 .product
-                  %a.style_link{:href => "https://item.mercari.com/jp/m29853900429/"}
+                  %a.style_link{:href => "/products/#{product.id}"}
                     %img{:alt => "image", :src => product.image}/
                   .name
                     = product.name

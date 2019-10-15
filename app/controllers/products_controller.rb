@@ -13,6 +13,10 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.all
+    # @category = categories.all
+    # @status = products.statuses.all
+    # @burand = products.burands.all
   end
 
   def create
