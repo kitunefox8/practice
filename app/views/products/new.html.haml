@@ -16,14 +16,14 @@
                 %p 最大10枚までアップロード出来ます。
               .sell-dropbox-container-clearfix
                 .sell-dropbox-container-clearfix__items
-                .sell-upload-drop-box 
-                  -# %input.sell-upload-drop-file{:multiple => "multiple", :name => "image1", :style => "display: none;", :type => "file"}/
-                  %pre.visible-pc ドラッグアンドドロップまたはクリックしてファイルをアップロード
+                  .sell-upload-drop-box
+                    = f.text_field :image, placeholder:"img_url", type: "text", class: "textarea-default" 
+                    %pre.visible-pc ドラッグアンドドロップまたはクリックしてファイルをアップロード
       .sell-content
         .form-group
           .image-form__upload-box--header 商品名
           %label
-            %span.image-form__upload-box--header__require　必須
+            %span.image-form__upload-box--header__require 必須
           %div
             
             = f.text_field :name, placeholder: "商品名（必須 40文字まで)", type: "string", class: "image-form__upload-box--header__default" 
