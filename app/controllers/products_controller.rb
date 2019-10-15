@@ -7,6 +7,7 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
     @product.build_category
+    @product.build_status
   end
 
   def show
@@ -27,7 +28,8 @@ class ProductsController < ApplicationController
   def create_params
     params.require(:product).permit(
       :name, :price, :description, :exposition, :delivery_fee, :shipping_area, :shipping_days, :saller_id,
-      category_attributes: [:id, :name]
+      category_attributes: [:id, :name],
+      status_attributes: [:id, :name]
     )
     # params.require(:product).permit(:name, :price, :description)
   end

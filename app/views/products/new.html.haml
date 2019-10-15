@@ -42,7 +42,7 @@
         .form-group
           .image-form__upload-box--header 商品名
           %span.image-form__upload-box--header__require 必須
-          = f.text_area :exposition, placeholder: "商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。", type: "text", rows: "5", class: "textarea-default"
+          = f.text_area :description, placeholder: "商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。", type: "text", rows: "5", class: "textarea-default"
       .sell-content.clearfix
         %h3.sell-sub-head 商品の詳細
         .sell-cotent__form-box
@@ -55,7 +55,7 @@
                 = c.select :name,[["---",""],["レディース","1"],["メンズ","2"],["ベビー・キッズ","3"],["インテリア・住まい・小物","4"],["本・音楽・ゲーム","5"],["おもちゃ・ホビー・グッズ","1328"],["コスメ・香水・美容","6"],["家電・スマホ・カメラ","7"],["ハンドメイド","9"],["チケット","1027"],["自動車・オートバイ","1318"],["その他","10"]], {}, class: "select-default"
                 -# = c.text_field :name, type: "string"
               %i.icon-arrow-bottom
-              
+
           .form-group.form-suggest-container
             %label
               ブランド
@@ -63,7 +63,7 @@
             %div
               .select-wrap
                 -# %input.input-default{:placeholder => "例）シャネル", :value => "んんn"}/
-                = f.text_field :name, placeholder: "例）シャネル", type: "string", class: "select-default"
+                -# = f.text_field :name, placeholder: "例）シャネル", type: "string", class: "select-default"
               %div
                 %ul.sell-brand-suggest.form-suggest-list
 
@@ -71,8 +71,9 @@
             .image-form__upload-box--header  カテゴリー
             %span.image-form__upload-box--header__require 必須
             %div
+            = f.fields_for :status do |s|
               .select-wrap
-                = f.select :description, [["---",""],["新品・未使用","1"],["未使用に近い","2"],["目立った傷、汚れ無し","3"],["やや傷、汚れあり","4"],["傷汚れあり","5"],["全体的に状態が悪い","1328"]], {}, class: "select-default"
+                = s.select :name, [["---",""],["新品・未使用","1"],["未使用に近い","2"],["目立った傷、汚れ無し","3"],["やや傷、汚れあり","4"],["傷汚れあり","5"],["全体的に状態が悪い","1328"]], {}, class: "select-default"
                 %i.icon-arrow-bottom
       .sell-content.clearfix
         %h3.sell-sub-head  配達について    
