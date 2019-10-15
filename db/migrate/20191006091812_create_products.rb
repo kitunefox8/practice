@@ -13,6 +13,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.integer :saller_id
       t.integer :category_id
       t.integer :status_id
+      t.integer :brand_id
     end
   end
 end

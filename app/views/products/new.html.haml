@@ -61,9 +61,10 @@
               ブランド
               %span.form-arbitrary 任意
             %div
+            = f.fields_for :brand do |b|
               .select-wrap
                 -# %input.input-default{:placeholder => "例）シャネル", :value => "んんn"}/
-                -# = f.text_field :name, placeholder: "例）シャネル", type: "string", class: "select-default"
+                = b.text_field :name, placeholder: "例）シャネル", type: "string", class: "select-default"
               %div
                 %ul.sell-brand-suggest.form-suggest-list
 

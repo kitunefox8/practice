@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2019_10_08_022842) do
   create_table "brands", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.integer "brandgroup_id"
+    t.integer "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -108,6 +109,7 @@ ActiveRecord::Schema.define(version: 2019_10_08_022842) do
     t.integer "saller_id"
     t.integer "category_id"
     t.integer "status_id"
+    t.integer "brand_id"
   end
 
   create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
