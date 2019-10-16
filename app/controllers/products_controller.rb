@@ -13,10 +13,10 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.all
-    # @category = categories.all
-    # @status = products.statuses.all
-    # @burand = products.burands.all
+    @product = Product.find(params[:id])  
+    @category = Category.find(params[:id])  
+    @status = Status.find(params[:id])  
+    @brand = Brand.find(params[:id])  
   end
 
   def create
@@ -33,7 +33,7 @@ class ProductsController < ApplicationController
   private
   def create_params
     params.require(:product).permit(
-      :image, :name, :price, :description, :exposition, :delivery_fee, :shipping_area, :shipping_days, :saller_id,
+      :image, :name, :price, :delivery, :description, :exposition, :delivery_fee, :shipping_area, :shipping_days, :saller_id,
       category_attributes: [:id, :name],
       status_attributes: [:id, :name],
       brand_attributes: [:id, :name]

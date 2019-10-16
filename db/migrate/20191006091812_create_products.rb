@@ -7,10 +7,10 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.text :description, null: false
       t.text :image
       # t.text :exposition
-      t.integer :category
-      t.integer :delivery_fee
-      t.integer :shipping_area
-      t.integer :shipping_days
+      t.string :delivery
+      t.string :delivery_fee
+      t.string :shipping_area
+      t.string :shipping_days
       t.integer :saller_id
       t.integer :category_id
       t.integer :status_id

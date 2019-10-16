@@ -103,10 +103,10 @@ ActiveRecord::Schema.define(version: 2019_10_08_022842) do
     t.string "price", null: false
     t.text "description", null: false
     t.text "image"
-    t.integer "category"
-    t.integer "delivery_fee"
-    t.integer "shipping_area"
-    t.integer "shipping_days"
+    t.string "delivery"
+    t.string "delivery_fee"
+    t.string "shipping_area"
+    t.string "shipping_days"
     t.integer "saller_id"
     t.integer "category_id"
     t.integer "status_id"
