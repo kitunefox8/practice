@@ -18,7 +18,9 @@ class ProductsController < ApplicationController
     @status = Status.find(params[:id])  
     @brand = Brand.find(params[:id])  
   end
-
+  def buy
+    @product = Product.find(params[:id])  
+  end
   def create
     @product = Product.new(create_params)
     # @product.build_category(create_params[:category_attributes])
