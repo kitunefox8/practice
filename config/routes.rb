@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   
   resources :products, only: [:index, :show, :new, :create] do
     collection do
-      get 'buy'
+      get '/buy/:id'  => 'products#buy'
+      # 'buy'
       # get 'show'
       # get 'show2'
       get 'session5'
