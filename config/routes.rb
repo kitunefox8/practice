@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get 'buy'
       # get 'show'
       # get 'show2'
+      get 'session5'
     end
   end
   resources :categories, onry: [:new, :create]
