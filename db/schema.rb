@@ -111,6 +111,7 @@ ActiveRecord::Schema.define(version: 2019_10_08_022842) do
     t.integer "category_id"
     t.integer "status_id"
     t.integer "brand_id"
+    t.string "buyer"
   end
 
   create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

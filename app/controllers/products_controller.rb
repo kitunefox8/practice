@@ -19,12 +19,20 @@ class ProductsController < ApplicationController
     @brand = Brand.find(params[:id])  
   end
   def buy
-    @product = Product.find(params[:id])  
+    @product = Product.find(params[:id])
+  end
+  def buyer
+    @product = Product.find(params[:id])
+    if @product.update(buyer: 1)
+      redirect_to action: :index
+    else
+    redirect_to action: :index
+    end
   end
   def create
     @product = Product.new(create_params)
     # @product.build_category(create_params[:category_attributes])
-    # binding.pry
+    
     if @product.save
       redirect_to action: :index
     else
@@ -35,7 +43,7 @@ class ProductsController < ApplicationController
   private
   def create_params
     params.require(:product).permit(
-      :image, :name, :price, :delivery, :description, :exposition, :delivery_fee, :shipping_area, :shipping_days, :saller_id,
+      :image, :name, :price, :delivery, :description, :exposition, :delivery_fee, :shipping_area, :shipping_days, :saller_id, :buyer,
       category_attributes: [:id, :name],
       status_attributes: [:id, :name],
       brand_attributes: [:id, :name]

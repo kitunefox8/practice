@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   
   resources :products, only: [:index, :show, :new, :create] do
     collection do
+      # patch   '/:id/edit'  => 'products#edit'
       get '/buy/:id'  => 'products#buy'
+      get '/buyer/:id' => 'products#buyer'
       # 'buy'
       # get 'show'
       # get 'show2'

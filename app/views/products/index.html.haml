@@ -70,6 +70,10 @@
                     =product.name
                   .price
                     =product.price
+                  -if product.buyer == "1" 
+                    .items-box_photo__sold
+                      .items-box_photo__sold__inner
+                        SOLD
 
         -#       .product
         -#         %p.style_link{:href => "https://item.mercari.com/jp/m82940365700/"}
@@ -256,7 +260,11 @@
                     = product.name
                   .price
                     = product.price
-
+                  
+                  -if product.buyer == "1" 
+                    .items-box_photo__sold
+                      .items-box_photo__sold__inner
+                        SOLD
               -# .product
               -#   %a.style_link{:href => "https://item.mercari.com/jp/m76433431829/"}
               -#     %img{:alt => "Thumbnail of \"CHANEL&MACコスメおまとめ大特価チャンス❗\"", :src => "https://static.mercdn.net/thumb/photos/m76433431829_1.jpg?1569545695"}/

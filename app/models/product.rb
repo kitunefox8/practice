@@ -8,4 +8,5 @@ belongs_to :brand
 accepts_nested_attributes_for :category
 accepts_nested_attributes_for :status
 accepts_nested_attributes_for :brand
+# accepts_nested_attributes_for :buyer
 end
