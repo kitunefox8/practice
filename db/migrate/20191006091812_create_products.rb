@@ -15,6 +15,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.integer :category_id
       t.integer :status_id
       t.integer :brand_id
+      t.string :buyer
     end
   end
 end

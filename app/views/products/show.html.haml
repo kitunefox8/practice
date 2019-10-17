@@ -39,7 +39,11 @@
             .owl-stage
               .owl-item{style: "width: 300px;"}
                 .owl-item-inner
-                  %img.owl-lazy{alt: "イメージ", :src => @product.image, :style => "opacity: 1;"}/
+                  %img.owl-lazy{alt: "イメージ", :src => @product.image, :style => "opacity: 1;"}
+                    -if @product.buyer == "1" 
+                      .items-box_photos__sold
+                        .items-box_photos__sold__inner
+                          SOLD
           .owl-nav.disabled
             .owl-prev 
             .owl-next 
@@ -111,8 +115,12 @@
       %span.item-tax (税込)
       %span.item-shipping-fee 
         = @product.delivery_fee
-    %a.item-buy-btn{:href => "/products/buy/#{@product.id}"}
-      購入画面に進む
+    -if @product.buyer == "1" 
+      .item-buy-btns
+        取引停止中
+    -else
+      %a.item-buy-btn{:href => "/products/buy/#{@product.id}"}
+        購入画面に進む
     .item-description.f14
       %p.item-description-inner
         = @product.description
