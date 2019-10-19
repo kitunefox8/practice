@@ -30,6 +30,7 @@
             %a.mercari__head__bottom__in{:href => "/jp/login/?login_callback=%2Fjp%2F"} ログイン
     -# ここまでヘッダーです
   %section.item-box-container.l-single-container
+    
     %h1.item-name
       = @product.name
     .item-main-content.clearfix
@@ -118,9 +119,16 @@
     -if @product.buyer == "1" 
       .item-buy-btns
         取引停止中
+      %a.item-buy-btns{href: "/products/destroy/#{@product.id}",method: :delete}
+        出品を取り消す
     -else
       %a.item-buy-btn{:href => "/products/buy/#{@product.id}"}
         購入画面に進む
+      %a.item-buy-btns{href: "/products/destroy/#{@product.id}",method: :delete}
+        出品を取り消す
+        -# = link_to  "/products/destroy/#{@product.id}"
+    
+
     .item-description.f14
       %p.item-description-inner
         = @product.description
